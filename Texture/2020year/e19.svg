@@ -1,0 +1,537 @@
+<svg width="1876" height="1181" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <style type="text/css">
+  <![CDATA[
+g[ed\:togtopicid],g[ed\:hyperlink],g[ed\:comment],g[ed\:note] {cursor:pointer;}
+g[id] {-moz-user-select: none;-ms-user-select: none;user-select: none;}
+svg text::selection,svg tspan::selection{background-color: #4285f4;color: #ffffff;fill: #ffffff;}
+.st3 {fill:#303030;font-family:微软雅黑;font-size:12pt}
+.st1 {fill:#454545;font-family:微软雅黑;font-size:10pt}
+.st2 {fill:#ffffff;font-family:微软雅黑;font-size:14pt}
+]]>
+ </style>
+ <defs>
+  <linearGradient y1="0%" id="lg1" x2="0%" x1="0%" y2="100%">
+   <stop stop-color="#ffffff" offset="0"/>
+   <stop stop-color="#f0f5f0" offset="0.25"/>
+   <stop stop-color="#e1ebe1" offset="0.75"/>
+   <stop stop-color="#c8d7c8" offset="1"/>
+  </linearGradient>
+ </defs>
+ <symbol id="plus">
+  <path id="svg_2" d="m11,6c0,2.8 -2.2,5 -5,5c-2.8,0 -5,-2.2 -5,-5c0,-2.8 2.2,-5 5,-5c2.8,0 5,2.2 5,5z" fill="url(#lg1)"/>
+  <path id="svg_3" stroke="#46a000" d="m11,6c0,2.8 -2.2,5 -5,5c-2.8,0 -5,-2.2 -5,-5c0,-2.8 2.2,-5 5,-5c2.8,0 5,2.2 5,5zm-8,0l6,0m-3,-3l0,6" stroke-width="0.7" fill="none"/>
+ </symbol>
+ <symbol id="minus">
+  <path id="svg_4" d="m11,6c0,2.8 -2.2,5 -5,5c-2.8,0 -5,-2.2 -5,-5c0,-2.8 2.2,-5 5,-5c2.8,0 5,2.2 5,5z" fill="url(#lg1)"/>
+  <path id="svg_5" stroke="#46a000" d="m11,6c0,2.8 -2.2,5 -5,5c-2.8,0 -5,-2.2 -5,-5c0,-2.8 2.2,-5 5,-5c2.8,0 5,2.2 5,5zm-8,0l6,0" stroke-width="0.7" fill="none"/>
+ </symbol>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_6" x="0" width="1876" height="1181" fill="#ffffff" y="0"/>
+  <path stroke="#92a7ff" fill-opacity="0.2" id="432" stroke-linejoin="round" d="m615.7,638.7l-50.4,52.4c-3.7,3.9 -8.1,5.8 -13.5,5.8l-522.8,0c-5.4,0 -8,-2.6 -8,-8l0,-149.9c0,-5.4 2.6,-8 8,-8l522.8,0c5.4,0 9.8,1.9 13.5,5.8l50.4,52.4c3.7,3.9 5.5,8.4 5.5,13.8l0,21.9c0,5.4 -1.8,9.9 -5.5,13.8z" fill="#f5f6ff"/>
+  <path stroke="#92a7ff" fill-opacity="0.2" id="433" stroke-linejoin="round" d="m615.2,475l-49.4,44.2c-4,3.6 -8.6,5.3 -14,5.3l-522.8,0c-5.4,0 -8,-2.6 -8,-8l0,-131.5c0,-5.4 2.6,-8 8,-8l522.8,0c5.4,0 10,1.7 14,5.3l49.4,44.2c4,3.6 6,7.9 6,13.3l0,21.9c0,5.4 -2,9.7 -6,13.3z" fill="#f5f6ff"/>
+  <path stroke-linecap="round" stroke="#696969" id="103" stroke-linejoin="round" d="m641.5,460.8c-18.9,0 0,-181.6 -27,-181.6" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="105" stroke-linejoin="round" d="m542.5,279.2c-14.3,0 -10.8,-30.4 -27,-30.4" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="107" stroke-linejoin="round" d="m542.5,280c-10.8,0 -18.9,0 -27,0" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="109" stroke-linejoin="round" d="m542.5,279.8c-14.3,0 -10.8,30.4 -27,30.4" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="111" stroke-linejoin="round" d="m641.5,460.8c-18.9,0 0,-105.6 -27,-105.6" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="113" stroke-linejoin="round" d="m528.5,355.6c-12.6,0 -14.8,-15.2 -27,-15.2" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="115" stroke-linejoin="round" d="m528.5,355.4c-12.6,0 -14.8,15.2 -27,15.2" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="117" stroke-linejoin="round" d="m641.5,461.1c-10.8,0 -18.9,1.8 -27,1.8" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="119" stroke-linejoin="round" d="m569.5,463.4c-16.6,0 -5.4,-54.8 -27,-54.8" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="121" stroke-linejoin="round" d="m569.5,463.2c-13.6,0 -12.3,-24.4 -27,-24.4" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="127" stroke-linejoin="round" d="m569.5,463c-11.5,0 -17.3,6 -27,6" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="129" stroke-linejoin="round" d="m641.5,461.5c-18.9,0 0,165 -27,165" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="131" stroke-linejoin="round" d="m569.5,626c-17.3,0 -3.7,-64 -27,-64" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="133" stroke-linejoin="round" d="m569.5,626.6c-12.6,0 -14.8,-15.2 -27,-15.2" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="135" stroke-linejoin="round" d="m569.5,626.4c-12.6,0 -14.8,15.2 -27,15.2" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="137" stroke-linejoin="round" d="m569.5,626c-17.3,0 -3.7,64 -27,64" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="139" stroke-linejoin="round" d="m569.5,462.6c-16.6,0 -5.4,54.8 -27,54.8" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="154" stroke-linejoin="round" d="m824.3,577c-28,-41.9 -38,-116 -96.3,-116" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="156" stroke-linejoin="round" d="m832.2,633.8c-32.9,65.7 -19.7,224.4 -104.2,224.4" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="158" stroke-linejoin="round" d="m609.5,857.8c-18.9,0 0,-103.6 -27,-103.6" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="160" stroke-linejoin="round" d="m609.5,857.6c-17.9,0 -2.4,-73.2 -27,-73.2" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="162" stroke-linejoin="round" d="m609.5,857.4c-15.5,0 -7.9,-42.8 -27,-42.8" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="164" stroke-linejoin="round" d="m609.5,858.2c-12.3,0 -15.5,-12.4 -27,-12.4" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="166" stroke-linejoin="round" d="m609.5,857.8c-14.9,0 -9.4,36.4 -27,36.4" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="168" stroke-linejoin="round" d="m609.5,857.6c-17.5,0 -3.3,66.8 -27,66.8" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="170" stroke-linejoin="round" d="m609.5,857.4c-18.8,0 -0.2,97.2 -27,97.2" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="172" stroke-linejoin="round" d="m609.5,858.2c-18.9,0 0,127.6 -27,127.6" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="352" stroke-linejoin="round" d="m949,605c22,0 42.5,0 63,0" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="354" stroke-linejoin="round" d="m1115.5,605.2c18.9,0 0,-460.4 27,-460.4" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="358" stroke-linejoin="round" d="m1115.5,605.8c18.9,0 0,-213.6 27,-213.6" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="360" stroke-linejoin="round" d="m1115.5,605.4c18.9,0 0,289.2 27,289.2" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="362" stroke-linejoin="round" d="m1201.5,144.8c16.3,0 6,-51.6 27,-51.6" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="364" stroke-linejoin="round" d="m1201.5,144.6c13.3,0 13.2,-21.2 27,-21.2" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="366" stroke-linejoin="round" d="m1201.5,145.4c11.9,0 16.4,9.2 27,9.2" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="368" stroke-linejoin="round" d="m1201.5,145.2c15.2,0 8.6,39.6 27,39.6" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="370" stroke-linejoin="round" d="m1201.5,145c17.7,0 2.8,70 27,70" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="372" stroke-linejoin="round" d="m1201.5,392c18.9,0 0,-128 27,-128" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="374" stroke-linejoin="round" d="m1201.5,391.6c18.2,0 1.6,-79.2 27,-79.2" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="376" stroke-linejoin="round" d="m1201.5,392.2c14.3,0 10.8,-30.4 27,-30.4" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="378" stroke-linejoin="round" d="m1201.5,392c10.8,0 18.9,0 27,0" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="380" stroke-linejoin="round" d="m1201.5,391.6c16.1,0 6.6,48.8 27,48.8" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="382" stroke-linejoin="round" d="m1201.5,392.2c18.8,0 0.2,97.6 27,97.6" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="384" stroke-linejoin="round" d="m1201.5,391.8c18.9,0 0,146.4 27,146.4" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="387" stroke-linejoin="round" d="m1201.5,895c18.9,0 0,-250 27,-250" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="389" stroke-linejoin="round" d="m1327.5,644.6c12.6,0 14.8,-15.2 27,-15.2" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="391" stroke-linejoin="round" d="m1327.5,644.4c12.6,0 14.8,15.2 27,15.2" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="395" stroke-linejoin="round" d="m1201.5,894.2c18.9,0 0,-204.4 27,-204.4" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="397" stroke-linejoin="round" d="m1201.5,895c18.9,0 0,-174 27,-174" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="399" stroke-linejoin="round" d="m1201.5,894.6c18.9,0 0,-125.2 27,-125.2" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="405" stroke-linejoin="round" d="m1201.5,894.4c18.8,0 0.3,-94.8 27,-94.8" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="407" stroke-linejoin="round" d="m1201.5,895c15.8,0 7.2,-46 27,-46" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="409" stroke-linejoin="round" d="m1201.5,894.6c11.1,0 18.1,2.8 27,2.8" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="411" stroke-linejoin="round" d="m1201.5,894.2c18.9,0 0,103.6 27,103.6" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="413" stroke-linejoin="round" d="m1314.5,998.2c17.7,0 2.8,-70.4 27,-70.4" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="425" stroke-linejoin="round" d="m1314.5,997.8c17.7,0 2.8,70.4 27,70.4" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="427" stroke-linejoin="round" d="m1201.5,894.8c18.9,0 0,204.4 27,204.4" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="429" stroke-linejoin="round" d="m1201.5,894.6c18.9,0 0,234.8 27,234.8" fill="none"/>
+  <path stroke-linecap="round" stroke="#696969" id="431" stroke-linejoin="round" d="m1201.5,894.4c18.9,0 0,265.2 27,265.2" fill="none"/>
+  <g id="385" transform="matrix(1,0,0,1,1142,545) ">
+   <path id="svg_7" stroke="#4badd0" stroke-linejoin="round" d="m13.2,0l514.5,0l13.2,26.4l-13.2,26.4l-271.3,0l-217.8,273.2l205.2,-273.2l-230.6,0l-13.2,-26.4l13.2,-26.4z" fill="#e9f1f7"/>
+   <text id="svg_8" class="st1">
+    <tspan id="svg_9" x="21" y="21.5">前面两种已经分析完，再分析就浪费时间。先用着，如果有疑问，再对比两本书，</tspan>
+    <tspan id="svg_10" x="21" y="39.9">混合着看。</tspan>
+   </text>
+  </g>
+  <g id="101" transform="matrix(1,0,0,1,791,577) ">
+   <path id="svg_11" stroke="#435fbc" stroke-linejoin="round" d="m4,0l149.8,0c2.7,0 4,1.3 4,4l0,48c0,2.7 -1.3,4 -4,4l-149.8,0c-2.7,0 -4,-1.3 -4,-4l0,-48c0,-2.7 1.3,-4 4,-4z" stroke-width="3" fill="#435fbc"/>
+   <text id="svg_12" class="st2">
+    <tspan id="svg_13" x="21" y="34.3">设计模式C++</tspan>
+   </text>
+  </g>
+  <g id="102" transform="matrix(1,0,0,1,542,256) ">
+   <path id="svg_14" stroke="#696969" stroke-linejoin="round" d="m0,23.9l72.4,0" fill="none"/>
+   <text id="svg_15" class="st1">
+    <tspan id="svg_16" x="8" y="16.1">目的准则</tspan>
+   </text>
+  </g>
+  <g id="104" transform="matrix(1,0,0,1,361,225) ">
+   <path id="svg_17" stroke="#696969" stroke-linejoin="round" d="m0,23.9l154,0" fill="none"/>
+   <text id="svg_18" class="st1">
+    <tspan id="svg_19" x="8" y="16.1">创建：和对象创建有关</tspan>
+   </text>
+  </g>
+  <g id="106" transform="matrix(1,0,0,1,347,256) ">
+   <path id="svg_20" stroke="#696969" stroke-linejoin="round" d="m0,23.9l167.6,0" fill="none"/>
+   <text id="svg_21" class="st1">
+    <tspan id="svg_22" x="8" y="16.1">结构：处理类或对象组合</tspan>
+   </text>
+  </g>
+  <g id="108" transform="matrix(1,0,0,1,157,286) ">
+   <path id="svg_23" stroke="#696969" stroke-linejoin="round" d="m0,23.9l358,0" fill="none"/>
+   <text id="svg_24" class="st1">
+    <tspan id="svg_25" x="8" y="16.1">行为：对类或对象之间怎么交互和怎样分配职责进行描述</tspan>
+   </text>
+  </g>
+  <g id="110" transform="matrix(1,0,0,1,528,332) ">
+   <path id="svg_26" stroke="#696969" stroke-linejoin="round" d="m0,23.9l86,0" fill="none"/>
+   <text id="svg_27" class="st1">
+    <tspan id="svg_28" x="8" y="16.1">范围准则：</tspan>
+   </text>
+  </g>
+  <g id="112" transform="matrix(1,0,0,1,21,317) ">
+   <path id="svg_29" d="m0,0l480.4,0l0,23.9l-480.4,0l0,-23.9z" fill="#fde1e7"/>
+   <path id="svg_30" stroke="#696969" stroke-linejoin="round" d="m0,23.9l480.4,0" fill="none"/>
+   <text id="svg_31" class="st1">
+    <tspan id="svg_32" x="8" y="16.1">类模式：静态的。处理类和子类之间的关系。代码表现为非多态的普通代码。</tspan>
+   </text>
+  </g>
+  <g id="114" transform="matrix(1,0,0,1,103,347) ">
+   <path id="svg_33" d="m0,0l398.8,0l0,23.9l-398.8,0l0,-23.9z" fill="#fde1e7"/>
+   <path id="svg_34" stroke="#696969" stroke-linejoin="round" d="m0,23.9l398.8,0" fill="none"/>
+   <text id="svg_35" class="st1">
+    <tspan id="svg_36" x="8" y="16.1">对象模式：动态的，处理对象间的关系。代码表现为多态代码。</tspan>
+   </text>
+  </g>
+  <g id="116" transform="matrix(1,0,0,1,569,439) ">
+   <path id="svg_37" d="m0,0l45.2,0l0,23.9l-45.2,0l0,-23.9z" fill="#fed6e5"/>
+   <path id="svg_38" stroke="#696969" stroke-linejoin="round" d="m0,23.9l45.2,0" fill="none"/>
+   <text id="svg_39" class="st1">
+    <tspan id="svg_40" x="8" y="16.1">重点</tspan>
+   </text>
+  </g>
+  <g id="118" transform="matrix(1,0,0,1,402,384) ">
+   <path id="svg_41" stroke="#696969" stroke-linejoin="round" d="m0,23.9l140.4,0" fill="none"/>
+   <text id="svg_42" class="st1">
+    <tspan id="svg_43" x="8" y="16.1">区分对象、类、类型</tspan>
+   </text>
+  </g>
+  <g id="120" transform="matrix(1,0,0,1,130,415) ">
+   <path id="svg_44" stroke="#696969" stroke-linejoin="round" d="m0,23.9l412.4,0" fill="none"/>
+   <text id="svg_45" class="st1">
+    <tspan id="svg_46" x="8" y="16.1">接口的重定义：对象接口描述了该对象所能接受的全部请求的集合</tspan>
+   </text>
+  </g>
+  <g id="126" transform="matrix(1,0,0,1,62,445) ">
+   <path id="svg_47" stroke="#696969" stroke-linejoin="round" d="m0,23.9l480.4,0" fill="none"/>
+   <text id="svg_48" class="st1">
+    <tspan id="svg_49" x="8" y="16.1">在设计系统时，针对接口编程，而不是针对实现编程。抽象层和实现层分离。</tspan>
+   </text>
+  </g>
+  <g id="128" transform="matrix(1,0,0,1,569,602) ">
+   <path id="svg_50" d="m0,0l45.2,0l0,23.9l-45.2,0l0,-23.9z" fill="#fed6e5"/>
+   <path id="svg_51" stroke="#696969" stroke-linejoin="round" d="m0,23.9l45.2,0" fill="none"/>
+   <text id="svg_52" class="st1">
+    <tspan id="svg_53" x="8" y="16.1">复用</tspan>
+   </text>
+  </g>
+  <g id="130" transform="matrix(1,0,0,1,174,538) ">
+   <path id="svg_54" stroke="#696969" stroke-linejoin="round" d="m0,23.9l368.4,0" fill="none"/>
+   <text id="svg_55" class="st1">
+    <tspan id="svg_56" x="8" y="16.1">设计系统、模块代码。关键：易复用、易替换≈易衍生扩展</tspan>
+   </text>
+  </g>
+  <g id="132" transform="matrix(1,0,0,1,28,569) ">
+   <path id="svg_57" stroke="#696969" stroke-linejoin="round" d="m0,42.3l514,0" fill="none"/>
+   <text id="svg_58" class="st1">
+    <tspan id="svg_59" x="8" y="16.1">易复用：子类复用父类代码、组合对象复用封装方法、委托复用其他类的实现方</tspan>
+    <tspan id="svg_60" x="8" y="34.5">法、泛型复用代码实现模板</tspan>
+   </text>
+  </g>
+  <g id="134" transform="matrix(1,0,0,1,415,618) ">
+   <path id="svg_61" stroke="#696969" stroke-linejoin="round" d="m0,23.9l126.8,0" fill="none"/>
+   <text id="svg_62" class="st1">
+    <tspan id="svg_63" x="8" y="16.1">易替换：三种多态</tspan>
+   </text>
+  </g>
+  <g id="136" transform="matrix(1,0,0,1,28,648) ">
+   <path id="svg_64" stroke="#696969" stroke-linejoin="round" d="m0,42.3l514,0" fill="none"/>
+   <text id="svg_65" class="st1">
+    <tspan id="svg_66" x="8" y="16.1">经验：系统设计时，将抽象层、实现层分离。我以前也写多态代码（虚方法），但</tspan>
+    <tspan id="svg_67" x="8" y="34.5">是一直没有机会使用 抽象类、接口。 原因是我的代码根本没有抽象层。</tspan>
+   </text>
+  </g>
+  <g id="138" transform="matrix(1,0,0,1,28,476) ">
+   <path id="svg_68" stroke="#696969" stroke-linejoin="round" d="m0,42.3l514,0" fill="none"/>
+   <text id="svg_69" class="st1">
+    <tspan id="svg_70" x="8" y="16.1">设计模式的最低角度是一个模块、系统。因此抽象层的分离是有必要的。以前的十</tspan>
+    <tspan id="svg_71" x="8" y="34.5">绝·变格局太小。</tspan>
+   </text>
+  </g>
+  <g id="153" transform="matrix(1,0,0,1,641,443) ">
+   <path id="svg_72" stroke="#ebecf3" stroke-linejoin="round" d="m4,0l79,0c2.7,0 4,1.3 4,4l0,29.6c0,2.7 -1.3,4 -4,4l-79,0c-2.7,0 -4,-1.3 -4,-4l0,-29.6c0,-2.7 1.3,-4 4,-4z" fill="#ebecf3"/>
+   <text id="svg_73" class="st3">
+    <tspan id="svg_74" x="18" y="23.8">第一章</tspan>
+   </text>
+  </g>
+  <g id="155" transform="matrix(1,0,0,1,609,839) ">
+   <path id="svg_75" stroke="#ebecf3" stroke-linejoin="round" d="m4,0l111,0c2.7,0 4,1.3 4,4l0,29.6c0,2.7 -1.3,4 -4,4l-111,0c-2.7,0 -4,-1.3 -4,-4l0,-29.6c0,-2.7 1.3,-4 4,-4z" fill="#ebecf3"/>
+   <text id="svg_76" class="st3">
+    <tspan id="svg_77" x="18" y="23.8">第二章案例</tspan>
+   </text>
+  </g>
+  <g id="157" transform="matrix(1,0,0,1,238,730) ">
+   <path id="svg_78" stroke="#696969" stroke-linejoin="round" d="m0,23.9l344.4,0" fill="none"/>
+   <text id="svg_79" class="st1">
+    <tspan id="svg_80" x="8" y="16.1">组合模式：解决文档元素（图片、字符）的结构问题。</tspan>
+   </text>
+  </g>
+  <g id="159" transform="matrix(1,0,0,1,302,761) ">
+   <path id="svg_81" stroke="#696969" stroke-linejoin="round" d="m0,23.9l280.4,0" fill="none"/>
+   <text id="svg_82" class="st1">
+    <tspan id="svg_83" x="8" y="16.1">策略模式：解决文档的 不同分行算法问题。</tspan>
+   </text>
+  </g>
+  <g id="161" transform="matrix(1,0,0,1,207,791) ">
+   <path id="svg_84" stroke="#696969" stroke-linejoin="round" d="m0,23.9l375.6,0" fill="none"/>
+   <text id="svg_85" class="st1">
+    <tspan id="svg_86" x="8" y="16.1">装饰模式：解决可选图元：滑动条、翻页按钮 的装饰问题。</tspan>
+   </text>
+  </g>
+  <g id="163" transform="matrix(1,0,0,1,184,821) ">
+   <path id="svg_87" stroke="#696969" stroke-linejoin="round" d="m0,23.9l398.8,0" fill="none"/>
+   <text id="svg_88" class="st1">
+    <tspan id="svg_89" x="8" y="16.1">工厂方法：创建不同风格的成套的：滚动条、菜单、按钮显示。</tspan>
+   </text>
+  </g>
+  <g id="165" transform="matrix(1,0,0,1,68,852) ">
+   <path id="svg_90" stroke="#696969" stroke-linejoin="round" d="m0,42.3l514,0" fill="none"/>
+   <text id="svg_91" class="st1">
+    <tspan id="svg_92" x="8" y="16.1">桥接模式：解决不同窗口系统的问题。【不太明白，因为对不同系统的window不</tspan>
+    <tspan id="svg_93" x="8" y="34.5">懂】</tspan>
+   </text>
+  </g>
+  <g id="167" transform="matrix(1,0,0,1,320,901) ">
+   <path id="svg_94" stroke="#696969" stroke-linejoin="round" d="m0,23.9l262.8,0" fill="none"/>
+   <text id="svg_95" class="st1">
+    <tspan id="svg_96" x="8" y="16.1">命令模式：解决用多种方式翻页的问题。</tspan>
+   </text>
+  </g>
+  <g id="169" transform="matrix(1,0,0,1,360,931) ">
+   <path id="svg_97" stroke="#696969" stroke-linejoin="round" d="m0,23.9l222,0" fill="none"/>
+   <text id="svg_98" class="st1">
+    <tspan id="svg_99" x="8" y="16.1">迭代器模式：解决拼写检查问题。</tspan>
+   </text>
+  </g>
+  <g id="171" transform="matrix(1,0,0,1,428,961) ">
+   <path id="svg_100" stroke="#696969" stroke-linejoin="round" d="m0,23.9l154,0" fill="none"/>
+   <text id="svg_101" class="st1">
+    <tspan id="svg_102" x="8" y="16.1">访问者模式：【没懂】</tspan>
+   </text>
+  </g>
+  <g id="351" transform="matrix(1,0,0,1,1012,587) ">
+   <path id="svg_103" stroke="#ebecf3" stroke-linejoin="round" d="m4,0l95,0c2.7,0 4,1.3 4,4l0,29.6c0,2.7 -1.3,4 -4,4l-95,0c-2.7,0 -4,-1.3 -4,-4l0,-29.6c0,-2.7 1.3,-4 4,-4z" fill="#ebecf3"/>
+   <text id="svg_104" class="st3">
+    <tspan id="svg_105" x="18" y="23.8">设计模式</tspan>
+   </text>
+  </g>
+  <g id="353" transform="matrix(1,0,0,1,1142,121) ">
+   <path id="svg_106" d="m0,0l58.8,0l0,23.9l-58.8,0l0,-23.9z" fill="#fed6e5"/>
+   <path id="svg_107" stroke="#696969" stroke-linejoin="round" d="m0,23.9l58.8,0" fill="none"/>
+   <text id="svg_108" class="st1">
+    <tspan id="svg_109" x="8" y="16.1">创建型</tspan>
+   </text>
+  </g>
+  <g id="357" transform="matrix(1,0,0,1,1142,368) ">
+   <path id="svg_110" stroke="#696969" stroke-linejoin="round" d="m0,23.9l58.8,0" fill="none"/>
+   <text id="svg_111" class="st1">
+    <tspan id="svg_112" x="8" y="16.1">结构型</tspan>
+   </text>
+  </g>
+  <g id="359" transform="matrix(1,0,0,1,1142,871) ">
+   <path id="svg_113" stroke="#696969" stroke-linejoin="round" d="m0,23.9l58.8,0" fill="none"/>
+   <text id="svg_114" class="st1">
+    <tspan id="svg_115" x="8" y="16.1">行为型</tspan>
+   </text>
+  </g>
+  <g id="361" transform="matrix(1,0,0,1,1228,51) ">
+   <path id="svg_116" stroke="#696969" stroke-linejoin="round" d="m0,42.3l514,0" fill="none"/>
+   <text id="svg_117" class="st1">
+    <tspan id="svg_118" x="8" y="16.1">抽象工厂：成套创建多个不同类型对象，且多个对象呈现N列一维表时，考虑使用</tspan>
+    <tspan id="svg_119" x="8" y="34.5">该模式。</tspan>
+   </text>
+  </g>
+  <g id="363" transform="matrix(1,0,0,1,1228,100) ">
+   <path id="svg_120" stroke="#696969" stroke-linejoin="round" d="m0,23.9l489.2,0" fill="none"/>
+   <text id="svg_121" class="st1">
+    <tspan id="svg_122" x="8" y="16.1">工厂方法：创建一个对象，但是存在多种类型。且这些类型呈现一维表时，……</tspan>
+   </text>
+  </g>
+  <g id="365" transform="matrix(1,0,0,1,1228,130) ">
+   <path id="svg_123" stroke="#696969" stroke-linejoin="round" d="m0,23.9l285.2,0" fill="none"/>
+   <text id="svg_124" class="st1">
+    <tspan id="svg_125" x="8" y="16.1">建造者模式：创建一个复杂组合对象时，……</tspan>
+   </text>
+  </g>
+  <g id="367" transform="matrix(1,0,0,1,1228,161) ">
+   <path id="svg_126" stroke="#696969" stroke-linejoin="round" d="m0,23.9l421.2,0" fill="none"/>
+   <text id="svg_127" class="st1">
+    <tspan id="svg_128" x="8" y="16.1">原型模式：创建一个对象，该对象和已存在的对象数据相似时，……</tspan>
+   </text>
+  </g>
+  <g id="369" transform="matrix(1,0,0,1,1228,191) ">
+   <path id="svg_129" stroke="#696969" stroke-linejoin="round" d="m0,23.9l407.6,0" fill="none"/>
+   <text id="svg_130" class="st1">
+    <tspan id="svg_131" x="8" y="16.1">单例模式：创建一个对象，且该对象可以提供全局访问点时，……</tspan>
+   </text>
+  </g>
+  <g id="371" transform="matrix(1,0,0,1,1228,221) ">
+   <path id="svg_132" d="m0,0l514,0l0,42.3l-514,0l0,-42.3z" fill="#fed6e5"/>
+   <path id="svg_133" stroke="#696969" stroke-linejoin="round" d="m0,42.3l514,0" fill="none"/>
+   <text id="svg_134" class="st1">
+    <tspan id="svg_135" x="8" y="16.1">适配器模式：组合新旧类型，形成“适配器”结构，使得新旧模块可以通过该“适</tspan>
+    <tspan id="svg_136" x="8" y="34.5">配器”交互，管道链接新旧。时考虑使用该模式。</tspan>
+   </text>
+  </g>
+  <g id="373" transform="matrix(1,0,0,1,1228,270) ">
+   <path id="svg_137" d="m0,0l514,0l0,42.3l-514,0l0,-42.3z" fill="#fed6e5"/>
+   <path id="svg_138" stroke="#696969" stroke-linejoin="round" d="m0,42.3l514,0" fill="none"/>
+   <text id="svg_139" class="st1">
+    <tspan id="svg_140" x="8" y="16.1">桥接模式：组合垂直抽象的不同类型，形成“桥状”结构，使得两个不同方向的抽</tspan>
+    <tspan id="svg_141" x="8" y="34.5">象类型可以组合在一起。时考虑使用该模式。</tspan>
+   </text>
+  </g>
+  <g id="375" transform="matrix(1,0,0,1,1228,319) ">
+   <path id="svg_142" d="m0,0l514,0l0,42.3l-514,0l0,-42.3z" fill="#fed6e5"/>
+   <path id="svg_143" stroke="#696969" stroke-linejoin="round" d="m0,42.3l514,0" fill="none"/>
+   <text id="svg_144" class="st1">
+    <tspan id="svg_145" x="8" y="16.1">组合模式：组合树形关系的不同类型/对象，形成“树”结构（也可能是局部-整体</tspan>
+    <tspan id="svg_146" x="8" y="34.5">结构）。时，考虑……</tspan>
+   </text>
+  </g>
+  <g id="377" transform="matrix(1,0,0,1,1228,368) ">
+   <path id="svg_147" d="m0,0l494.8,0l0,23.9l-494.8,0l0,-23.9z" fill="#fde1e7"/>
+   <path id="svg_148" stroke="#696969" stroke-linejoin="round" d="m0,23.9l494.8,0" fill="none"/>
+   <text id="svg_149" class="st1">
+    <tspan id="svg_150" x="8" y="16.1">装饰模式：组合“链型”关系的不同类型/对象，形成“链”结构。时，考虑……</tspan>
+   </text>
+  </g>
+  <g id="379" transform="matrix(1,0,0,1,1228,398) ">
+   <path id="svg_151" d="m0,0l514,0l0,42.3l-514,0l0,-42.3z" fill="#fde1e7"/>
+   <path id="svg_152" stroke="#696969" stroke-linejoin="round" d="m0,42.3l514,0" fill="none"/>
+   <text id="svg_153" class="st1">
+    <tspan id="svg_154" x="8" y="16.1">外观模式：组合新类型和旧系统，形成“伞”结构，使得 新类型和旧系统可以 良</tspan>
+    <tspan id="svg_155" x="8" y="34.5">好交互时，考虑……</tspan>
+   </text>
+  </g>
+  <g id="381" transform="matrix(1,0,0,1,1228,447) ">
+   <path id="svg_156" d="m0,0l514,0l0,42.3l-514,0l0,-42.3z" fill="#fde1e7"/>
+   <path id="svg_157" stroke="#696969" stroke-linejoin="round" d="m0,42.3l514,0" fill="none"/>
+   <text id="svg_158" class="st1">
+    <tspan id="svg_159" x="8" y="16.1">享元模式：无所谓结构，更像是行为。当使用数据对象相同，为了节约内存时，使</tspan>
+    <tspan id="svg_160" x="8" y="34.5">用该模式，共享该数据对象。</tspan>
+   </text>
+  </g>
+  <g id="383" transform="matrix(1,0,0,1,1228,496) ">
+   <path id="svg_161" d="m0,0l514,0l0,42.3l-514,0l0,-42.3z" fill="#fde1e7"/>
+   <path id="svg_162" stroke="#696969" stroke-linejoin="round" d="m0,42.3l514,0" fill="none"/>
+   <text id="svg_163" class="st1">
+    <tspan id="svg_164" x="8" y="16.1">代理模式：弱化结构，强化行为。当需要在被代理者不方便（还未new）下执行</tspan>
+    <tspan id="svg_165" x="8" y="34.5">时，考虑使用代理模式。</tspan>
+   </text>
+  </g>
+  <g id="386" transform="matrix(1,0,0,1,1228,621) ">
+   <path id="svg_166" d="m0,0l99.6,0l0,23.9l-99.6,0l0,-23.9z" fill="#fde1e7"/>
+   <path id="svg_167" stroke="#696969" stroke-linejoin="round" d="m0,23.9l99.6,0" fill="none"/>
+   <text id="svg_168" class="st1">
+    <tspan id="svg_169" x="8" y="16.1">职责链模式：</tspan>
+   </text>
+  </g>
+  <g id="388" transform="matrix(1,0,0,1,1355,605) ">
+   <path id="svg_170" stroke="#696969" stroke-linejoin="round" d="m0,23.9l470.8,0" fill="none"/>
+   <text id="svg_171" class="st1">
+    <tspan id="svg_172" x="8" y="16.1">有多个的对象可以处理一个请求，哪个对象处理该请求运行时刻自动确定。</tspan>
+   </text>
+  </g>
+  <g id="390" transform="matrix(1,0,0,1,1355,636) ">
+   <path id="svg_173" stroke="#696969" stroke-linejoin="round" d="m0,23.9l453.2,0" fill="none"/>
+   <text id="svg_174" class="st1">
+    <tspan id="svg_175" x="8" y="16.1">你想在不明确指定接收者的情况下，向多个对象中的一个提交一个请求。</tspan>
+   </text>
+  </g>
+  <g id="394" transform="matrix(1,0,0,1,1228,666) ">
+   <path id="svg_176" d="m0,0l371.6,0l0,23.9l-371.6,0l0,-23.9z" fill="#fde1e7"/>
+   <path id="svg_177" stroke="#696969" stroke-linejoin="round" d="m0,23.9l371.6,0" fill="none"/>
+   <text id="svg_178" class="st1">
+    <tspan id="svg_179" x="8" y="16.1">命令模式：多种方式执行同一操作，操作可以记录、撤销。</tspan>
+   </text>
+  </g>
+  <g id="396" transform="matrix(1,0,0,1,1228,697) ">
+   <path id="svg_180" stroke="#696969" stroke-linejoin="round" d="m0,23.9l507.6,0" fill="none"/>
+   <text id="svg_181" class="st1">
+    <tspan id="svg_182" x="8" y="16.1">解释器模式：静态。和语言的解释相关。（比如语句的开头，结尾。正则表达式）</tspan>
+   </text>
+  </g>
+  <g id="398" transform="matrix(1,0,0,1,1228,727) ">
+   <path id="svg_183" d="m0,0l514,0l0,42.3l-514,0l0,-42.3z" fill="#fde1e7"/>
+   <path id="svg_184" stroke="#696969" stroke-linejoin="round" d="m0,42.3l514,0" fill="none"/>
+   <text id="svg_185" class="st1">
+    <tspan id="svg_186" x="8" y="16.1">迭代器模式：访问一个聚合对象的内容而无需暴露它的内部表示。和“遍历”相关</tspan>
+    <tspan id="svg_187" x="8" y="34.5">的行为。</tspan>
+   </text>
+  </g>
+  <g id="404" transform="matrix(1,0,0,1,1228,776) ">
+   <path id="svg_188" d="m0,0l480.4,0l0,23.9l-480.4,0l0,-23.9z" fill="#fde1e7"/>
+   <path id="svg_189" stroke="#696969" stroke-linejoin="round" d="m0,23.9l480.4,0" fill="none"/>
+   <text id="svg_190" class="st1">
+    <tspan id="svg_191" x="8" y="16.1">中介者模式：想定制一个分布在多个类中的行为，而又不想生成太多的子类。</tspan>
+   </text>
+  </g>
+  <g id="406" transform="matrix(1,0,0,1,1228,806) ">
+   <path id="svg_192" d="m0,0l514,0l0,42.3l-514,0l0,-42.3z" fill="#fde1e7"/>
+   <path id="svg_193" stroke="#696969" stroke-linejoin="round" d="m0,42.3l514,0" fill="none"/>
+   <text id="svg_194" class="st1">
+    <tspan id="svg_195" x="8" y="16.1">备忘录模式：必须保存一个对象在某一个时刻的 (部分)状态, 这样以后需要时它才</tspan>
+    <tspan id="svg_196" x="8" y="34.5">能恢复到先前的状态。</tspan>
+   </text>
+  </g>
+  <g id="408" transform="matrix(1,0,0,1,1228,855) ">
+   <path id="svg_197" d="m0,0l514,0l0,42.3l-514,0l0,-42.3z" fill="#fed6e5"/>
+   <path id="svg_198" stroke="#696969" stroke-linejoin="round" d="m0,42.3l514,0" fill="none"/>
+   <text id="svg_199" class="st1">
+    <tspan id="svg_200" x="8" y="16.1">观察者模式：当一个对象必须通知其它对象，而它又不能假定其它对象是谁。换言</tspan>
+    <tspan id="svg_201" x="8" y="34.5">之 , 你不希望这些对象是紧密耦合的。</tspan>
+   </text>
+  </g>
+  <g id="410" transform="matrix(1,0,0,1,1228,974) ">
+   <path id="svg_202" d="m0,0l86,0l0,23.9l-86,0l0,-23.9z" fill="#fde1e7"/>
+   <path id="svg_203" stroke="#696969" stroke-linejoin="round" d="m0,23.9l86,0" fill="none"/>
+   <text id="svg_204" class="st1">
+    <tspan id="svg_205" x="8" y="16.1">状态模式：</tspan>
+   </text>
+  </g>
+  <g id="412" transform="matrix(1,0,0,1,1341,904) ">
+   <path id="svg_206" stroke="#696969" stroke-linejoin="round" d="m0,23.9l501.2,0" fill="none"/>
+   <text id="svg_207" class="st1">
+    <tspan id="svg_208" x="8" y="16.1">一个对象的行为取决于它的状态, 并且它必须在运行时刻根据状态改变它的行为。</tspan>
+   </text>
+  </g>
+  <g id="424" transform="matrix(1,0,0,1,1341,934) ">
+   <path id="svg_209" stroke="#696969" stroke-linejoin="round" d="m0,134.3l514,0" fill="none"/>
+   <text id="svg_210" class="st1">
+    <tspan id="svg_211" x="8" y="16.1">一个操作中含有庞大的多分支的条件语句，且这些分支依赖于该对象的状态。这个</tspan>
+    <tspan id="svg_212" x="8" y="34.5">状</tspan>
+    <tspan id="svg_213" x="8" y="52.9">态通常用一个或多个枚举常量表示。通常 , 有多个操作包含这一相同的条件结构。</tspan>
+    <tspan id="svg_214" x="8" y="71.3">S t a t e</tspan>
+    <tspan id="svg_215" x="8" y="89.7">模式将每一个条件分支放入一个独立的类中。这使得你可以根据对象自身的情况将</tspan>
+    <tspan id="svg_216" x="8" y="108.1">对</tspan>
+    <tspan id="svg_217" x="8" y="126.5">象的状态作为一个对象，这一对象可以不依赖于其他对象而独立变化。</tspan>
+   </text>
+  </g>
+  <g id="426" transform="matrix(1,0,0,1,1228,1075) ">
+   <path id="svg_218" d="m0,0l426,0l0,23.9l-426,0l0,-23.9z" fill="#fed6e5"/>
+   <path id="svg_219" stroke="#696969" stroke-linejoin="round" d="m0,23.9l426,0" fill="none"/>
+   <text id="svg_220" class="st1">
+    <tspan id="svg_221" x="8" y="16.1">策略模式：存在不同变体算法的情况下。可以让不同变体进行替换。</tspan>
+   </text>
+  </g>
+  <g id="428" transform="matrix(1,0,0,1,1228,1105) ">
+   <path id="svg_222" d="m0,0l507.6,0l0,23.9l-507.6,0l0,-23.9z" fill="#fde1e7"/>
+   <path id="svg_223" stroke="#696969" stroke-linejoin="round" d="m0,23.9l507.6,0" fill="none"/>
+   <text id="svg_224" class="st1">
+    <tspan id="svg_225" x="8" y="16.1">模板方法：一次性实现一个算法的不变的部分，并将可变的行为留给子类来实现。</tspan>
+   </text>
+  </g>
+  <g id="430" transform="matrix(1,0,0,1,1228,1136) ">
+   <path id="svg_226" stroke="#696969" stroke-linejoin="round" d="m0,23.9l262.8,0" fill="none"/>
+   <text id="svg_227" class="st1">
+    <tspan id="svg_228" x="8" y="16.1">访问者模式：最复杂，最少使用的模式。</tspan>
+   </text>
+  </g>
+  <g id="svg_229">
+   <use id="svg_230" x="950" y="599" xlink:href="#minus"/>
+  </g>
+  <g id="svg_231">
+   <use id="svg_232" x="529" y="262" xlink:href="#minus"/>
+  </g>
+  <g id="svg_233">
+   <use id="svg_234" x="515" y="338" xlink:href="#minus"/>
+  </g>
+  <g id="svg_235">
+   <use id="svg_236" x="556" y="445" xlink:href="#minus"/>
+  </g>
+  <g id="svg_237">
+   <use id="svg_238" x="556" y="608" xlink:href="#minus"/>
+  </g>
+  <g id="svg_239">
+   <use id="svg_240" x="628" y="455" xlink:href="#minus"/>
+  </g>
+  <g id="svg_241">
+   <use id="svg_242" x="596" y="852" xlink:href="#minus"/>
+  </g>
+  <g id="svg_243">
+   <use id="svg_244" x="1116" y="599" xlink:href="#minus"/>
+  </g>
+  <g id="svg_245">
+   <use id="svg_246" x="1202" y="127" xlink:href="#minus"/>
+  </g>
+  <g id="svg_247">
+   <use id="svg_248" x="1202" y="374" xlink:href="#minus"/>
+  </g>
+  <g id="svg_249">
+   <use id="svg_250" x="1202" y="877" xlink:href="#minus"/>
+  </g>
+  <g id="svg_251">
+   <use id="svg_252" x="1329" y="627" xlink:href="#minus"/>
+  </g>
+  <g id="svg_253">
+   <use id="svg_254" x="1315" y="980" xlink:href="#minus"/>
+  </g>
+ </g>
+</svg>
