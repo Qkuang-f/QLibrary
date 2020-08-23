@@ -1,19 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Qkuang技术分享</title>
-  <link rel="stylesheet" href="Link/docute.css">
-
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./Link/vue.css">
+  
+  
 </head>
 
 <body>
-  <div id="docute"></div>
-  <script src="Link/docute.js"></script>
-  <script src="Sidebar.js"></script>
-  <script src="Link/prism-csharp.min.js"></script>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'Qkuang的技术分享',     //跳转封面的名称
+      loadSidebar: true,  //加载目录栏
+      subMaxLevel: 1,         //加载md的一级标题作为目录
+      auto2top: true,           //每次切换，自动回退到顶部
+      repo: 'https://github.com/Qkuang-f/',    //添加Github的链接（小猫图标）
+      relativePath: true,     //相对计算路径
+      // coverpage: true,          //配合coverpage文件 实现封面
+      // onlyCover: true,          //主页仅加载封面
+
+      //*******************************搜索**************//
+      search: {
+        noData: {
+          '/': 'No results!'
+        },
+        paths: 'auto',
+        placeholder: {
+          '/': '只能搜索已经缓存下来的文章'
+        }
+      },
+      //************************Over************//
+     
+
+    }
+  </script>
+  <script src="./Link/docsify.min.js"></script>
+  <!-- 额外插件支持：搜索、代码块快捷复制按钮、cSharp语法高亮、翻页按钮 -->
+  <script src="./Link/search.min.js"></script>
+  <script src="./Link/docsify-copy-code.js"></script>
+  <script src="./Link/prism-csharp.min.js"></script>
+  <script src="./Link/docsify-pagination.min.js"></script>
+  
 </body>
 
 </html>
