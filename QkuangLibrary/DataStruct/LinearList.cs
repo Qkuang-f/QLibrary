@@ -27,12 +27,12 @@ namespace QkuangLibrary.DataStruct
         /// </summary>
         bool IsEmpty { get; }
         /// <summary>
-        /// 附加操作
+        /// 附加（追加）操作
         /// </summary>
         /// <param name="item"></param>
         void Append(T item);
         /// <summary>
-        /// 插入操作
+        /// 插入操作,索引从0开始
         /// </summary>
         /// <param name="item">元素</param>
         /// <param name="i">插入后的位置</param>
@@ -57,6 +57,8 @@ namespace QkuangLibrary.DataStruct
         int Locate(T value);
     }
 
+ 
+
     #region 顺序表
 
     /// <summary>
@@ -67,11 +69,17 @@ namespace QkuangLibrary.DataStruct
     {
         private int INDEX;          //枚举器使用光标
 
-        private T[] array;
+        private T[] array;              //存储
         private int currentIndex;       //当前最后一个元素索引
         private int currentLength;      //当前容器的大小
+
+        /// <summary>
+        /// 创建顺序表
+        /// </summary>
+        /// <param name="magnitude">数量级，超过当前容量时，下次扩展该数量的容量</param>
         public SeqList(int magnitude)
         {
+            
             Magnitude = magnitude;
             array = new T[magnitude];
             currentLength = magnitude;
@@ -152,9 +160,19 @@ namespace QkuangLibrary.DataStruct
             return result;
         }
 
+        /// <summary>
+        /// 删除
+        /// </summary>
+        /// <param name="v">按值查找</param>
+        /// <returns></returns>
+        public T Delete(T v)
+        {
+            return this.Delete(this.Locate(v));
+        }
+
         public void Dispose()
         {
-            //Console.WriteLine("清理Dispose");
+            Console.WriteLine("清理Dispose");
             INDEX = -1;
         }
 
@@ -252,6 +270,275 @@ namespace QkuangLibrary.DataStruct
                 return true;
             }
         }
+    }
+
+    #endregion
+
+
+    #region 单链表
+
+
+    public class SingleLinkList<T> : IlinearList<T>,IEnumerable<T>,IEnumerator<T>
+    {
+       
+        class Node
+        {
+            public T Data { get; set; }     //存储数据
+            public Node NextNode { get; set; }      //下一个节点
+
+            // 四种情况下的构造函数
+            public Node(T d, Node next)
+            {
+                Data = d;
+                NextNode = next;
+            }
+            public Node(Node next) => NextNode = next;
+            public Node(T d) => Data = d;
+            public Node() => this.Data = default;
+
+
+        }
+
+        private Node head;      //头节点
+
+        /// <summary>
+        /// 判断索引是否存在于当前链表中
+        /// </summary>
+        /// <param name="i">索引</param>
+        /// <returns></returns>
+        private bool IsOnIndex(int i)
+        {
+            if (i < GetLength && i >= 0)
+            {
+                return true;
+            }else
+            {
+                return false;
+            }
+        }
+
+
+        // 两个IEnumera的接口实现
+
+        private Node enumerasCurrentField;
+
+
+        public T Current
+        {
+
+            get
+            {
+                //Console.WriteLine("Current");
+                return this.enumerasCurrentField.Data;
+            }
+
+        }
+
+        object IEnumerator.Current => throw new NotImplementedException();
+        //************接口实现
+
+        /// <summary>
+        /// 每次都需要遍历链表，经历少用。
+        /// </summary>
+        public int GetLength
+        {
+            get
+            {
+                int i = 0;
+                Node p = this.head;
+                while (p != null)
+                {
+                    p = p.NextNode;
+                    i++;
+                }
+                return i;
+            }
+        }
+
+        public bool IsEmpty
+        {
+            get
+            {
+                if (this.head == null)
+                    return true;
+                return false;
+            }
+        }
+
+
+        public void Append(T item)
+        {
+            //Console.WriteLine("Append");
+            Node p = new Node(item);
+
+            if (this.head == null)
+            {
+                this.head = p;
+                return;
+            }
+
+            Node q = this.head;
+            while (q.NextNode != null)
+            {
+                q = q.NextNode;
+            }
+
+            
+            q.NextNode = p;
+            
+        }
+
+        public void Clear()
+        {
+            this.head = null;
+        }
+
+        public T Delete(int i)
+        {
+            
+            if (IsOnIndex(i))
+            {
+                Node q = new Node();
+                Node p = this.head;     //删除指针
+                if (i == 0)
+                {
+                    this.head = this.head.NextNode;
+                    return p.Data;
+                }
+
+                for(int j = 0; j < i; j++)
+                {
+                    q = p;
+                    p = p.NextNode;
+                }
+
+                q.NextNode = p.NextNode;
+                return p.Data;
+
+            }else
+            {
+                throw new Exception("索引超出链表范围");
+            }
+        }
+
+        public T GetElem(int i)
+        {
+            if (IsOnIndex(i))
+            {
+                Node p = this.head;
+                for(int j = 0; j < i; j++)
+                {
+                    p = p.NextNode;
+                }
+                return p.Data;
+            }
+            else
+            {
+                throw new Exception("索引超出链表范围");
+            }
+        }
+
+        public void Insert(T item, int i)
+        {
+           
+            if (IsOnIndex(i))
+            {
+               
+
+                Node q = new Node();        // 前置
+                Node p = this.head;         //后置
+
+                if (i == 0)
+                {
+                    q = new Node(item);
+                    q.NextNode = p;
+                    this.head = q;
+                    return;
+                }
+
+                for (int j = 0; j < i; j++)
+                {
+                    q = p;
+                    p = p.NextNode;
+                }
+
+                q.NextNode = new Node(item);
+                q.NextNode.NextNode = p;
+
+            }else if (i == GetLength)
+            {
+                //允许索引为当前最大索引的后一位数
+                this.Append(item);
+            }
+            else
+            {
+                throw new Exception("索引超出链表范围");
+            }
+        }
+
+        public int Locate(T value)
+        {
+            Node p = this.head;
+            int i = -1;
+            while (p != null)
+            {
+                i++;
+                if (p.Data.Equals(value))
+                    return i;
+                    
+                p = p.NextNode;
+            }
+
+            return -1;
+        }
+
+
+
+        //************Over
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            //Console.WriteLine("GetEnumerator");
+            Reset();
+            return this;
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            Console.WriteLine("GetEnumerator，非泛型");
+
+            throw new NotImplementedException();
+        }
+
+        public bool MoveNext()
+        {
+            //Console.WriteLine("MoveNext");
+            this.enumerasCurrentField = this.enumerasCurrentField.NextNode;
+            if (this.enumerasCurrentField != null)
+            {
+                
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+
+        public void Reset()
+        {
+            //Console.WriteLine("Reset");
+            this.enumerasCurrentField = new Node();
+            this.enumerasCurrentField.NextNode = this.head;
+        }
+
+        public void Dispose()
+        {
+            //Console.WriteLine("Dispose");
+        }
+
+
     }
 
     #endregion
