@@ -55,9 +55,16 @@ namespace QkuangLibrary.DataStruct
         /// <param name="value"></param>
         /// <returns></returns>
         int Locate(T value);
+
+        /// <summary>
+        /// 修改指定位置的值
+        /// </summary>
+        /// <param name="value"></param>
+        /// <param name="i"></param>
+        void SetElem(T value, int i);
     }
 
- 
+
 
     #region 顺序表
 
@@ -65,7 +72,7 @@ namespace QkuangLibrary.DataStruct
     /// 动态实现的顺序表
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class SeqList<T> : IlinearList<T>,IEnumerator<T>,IEnumerable<T>
+    public class SeqList<T> : IlinearList<T>, IEnumerator<T>, IEnumerable<T>
     {
         private int INDEX;          //枚举器使用光标
 
@@ -79,7 +86,7 @@ namespace QkuangLibrary.DataStruct
         /// <param name="magnitude">数量级，超过当前容量时，下次扩展该数量的容量</param>
         public SeqList(int magnitude)
         {
-            
+
             Magnitude = magnitude;
             array = new T[magnitude];
             currentLength = magnitude;
@@ -109,16 +116,18 @@ namespace QkuangLibrary.DataStruct
         /// 数量级，用于每次扩展时决定扩展的大小
         /// </summary>
         public int Magnitude { get; set; }
-        public int GetLength => currentIndex+1;
+        public int GetLength => currentIndex + 1;
 
-        public bool IsEmpty { 
-            get{
+        public bool IsEmpty
+        {
+            get
+            {
                 if (currentIndex == -1) return true;
                 return false;
             }
         }
 
-        public T Current => array[INDEX];        
+        public T Current => array[INDEX];
 
         object IEnumerator.Current => array[INDEX];
 
@@ -144,12 +153,12 @@ namespace QkuangLibrary.DataStruct
         public T Delete(int i)
         {
             T result = default(T);
-            if (!IsEmpty&&IsOnIndex(i))
+            if (!IsEmpty && IsOnIndex(i))
             {
                 result = array[i];
                 for (; i < currentIndex; i++)
                 {
-                    array[i] = array[i+1];
+                    array[i] = array[i + 1];
                 }
                 currentIndex--;
             }
@@ -191,7 +200,7 @@ namespace QkuangLibrary.DataStruct
 
         public void Insert(T item, int i)
         {
-            if (IsOnIndex(i)||i==currentIndex+1)
+            if (IsOnIndex(i) || i == currentIndex + 1)
             {
                 currentIndex++;
                 if (currentIndex >= currentLength)
@@ -209,7 +218,7 @@ namespace QkuangLibrary.DataStruct
             {
                 throw new Exception("索引当前超出容量");
             }
-           
+
         }
 
         public int Locate(T value)
@@ -219,7 +228,7 @@ namespace QkuangLibrary.DataStruct
                 return -1;
             }
 
-            for(int i = 0; i < GetLength; i++)
+            for (int i = 0; i < GetLength; i++)
             {
                 if (value.Equals(array[i]))
                 {
@@ -228,6 +237,11 @@ namespace QkuangLibrary.DataStruct
             }
 
             return -1;
+        }
+
+        public void SetElem(T value, int i)
+        {
+            this.array[i] = value;
         }
 
         public bool MoveNext()
@@ -241,6 +255,8 @@ namespace QkuangLibrary.DataStruct
         {
             INDEX = -1;
         }
+
+
 
         //扩展容量
         private T[] ExpandCapacity()
@@ -261,7 +277,7 @@ namespace QkuangLibrary.DataStruct
         //判断索引是否在元素内
         private bool IsOnIndex(int i)
         {
-            if (i > currentIndex||i<0)
+            if (i > currentIndex || i < 0)
             {
                 return false;
             }
@@ -275,12 +291,15 @@ namespace QkuangLibrary.DataStruct
     #endregion
 
 
-    #region 单链表
+    #region 遗弃单链表
 
-
-    public class SingleLinkList<T> : IlinearList<T>,IEnumerable<T>,IEnumerator<T>
+    /// <summary>
+    /// 已经抛弃，不带头节点，单链表。旧代码，太烂了，放这里，已经重新写了一个单链表。
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public class OldSingleLinkList<T> : IlinearList<T>, IEnumerable<T>, IEnumerator<T>
     {
-       
+
         class Node
         {
             public T Data { get; set; }     //存储数据
@@ -311,7 +330,8 @@ namespace QkuangLibrary.DataStruct
             if (i < GetLength && i >= 0)
             {
                 return true;
-            }else
+            }
+            else
             {
                 return false;
             }
@@ -383,9 +403,9 @@ namespace QkuangLibrary.DataStruct
                 q = q.NextNode;
             }
 
-            
+
             q.NextNode = p;
-            
+
         }
 
         public void Clear()
@@ -395,7 +415,7 @@ namespace QkuangLibrary.DataStruct
 
         public T Delete(int i)
         {
-            
+
             if (IsOnIndex(i))
             {
                 Node q = new Node();
@@ -406,7 +426,7 @@ namespace QkuangLibrary.DataStruct
                     return p.Data;
                 }
 
-                for(int j = 0; j < i; j++)
+                for (int j = 0; j < i; j++)
                 {
                     q = p;
                     p = p.NextNode;
@@ -415,7 +435,8 @@ namespace QkuangLibrary.DataStruct
                 q.NextNode = p.NextNode;
                 return p.Data;
 
-            }else
+            }
+            else
             {
                 throw new Exception("索引超出链表范围");
             }
@@ -426,7 +447,7 @@ namespace QkuangLibrary.DataStruct
             if (IsOnIndex(i))
             {
                 Node p = this.head;
-                for(int j = 0; j < i; j++)
+                for (int j = 0; j < i; j++)
                 {
                     p = p.NextNode;
                 }
@@ -440,10 +461,10 @@ namespace QkuangLibrary.DataStruct
 
         public void Insert(T item, int i)
         {
-           
+
             if (IsOnIndex(i))
             {
-               
+
 
                 Node q = new Node();        // 前置
                 Node p = this.head;         //后置
@@ -465,7 +486,8 @@ namespace QkuangLibrary.DataStruct
                 q.NextNode = new Node(item);
                 q.NextNode.NextNode = p;
 
-            }else if (i == GetLength)
+            }
+            else if (i == GetLength)
             {
                 //允许索引为当前最大索引的后一位数
                 this.Append(item);
@@ -485,7 +507,7 @@ namespace QkuangLibrary.DataStruct
                 i++;
                 if (p.Data.Equals(value))
                     return i;
-                    
+
                 p = p.NextNode;
             }
 
@@ -516,7 +538,7 @@ namespace QkuangLibrary.DataStruct
             this.enumerasCurrentField = this.enumerasCurrentField.NextNode;
             if (this.enumerasCurrentField != null)
             {
-                
+
                 return true;
             }
             else
@@ -538,9 +560,575 @@ namespace QkuangLibrary.DataStruct
             //Console.WriteLine("Dispose");
         }
 
-
+        public void SetElem(T value, int i)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     #endregion
+
+    #region 单链表(已经测试)
+
+
+
+    /// <summary>
+    /// 带头节点单链表(两个空节点作为首尾，并不存值）
+    /// 特点：0位置插入，删除、末尾追加元素最快的。
+    /// </summary>
+
+    public class SingleLinkList<T> : IlinearList<T>, IEnumerable<T>, IEnumerator<T>
+    {
+        public class Node
+        {
+            public T Data { get; set; }     //存储数据
+            public Node NextNode { get; set; }      //下一个节点
+
+            // 四种情况下的构造函数
+            public Node(T d, Node next)
+            {
+                Data = d;
+                NextNode = next;
+            }
+            public Node(Node next) => NextNode = next;
+            public Node(T d) => Data = d;
+            public Node() => this.Data = default;
+        }
+
+
+
+        private Node head;
+        private Node tail;
+        private int length;
+        private Node current;   //枚举器循环指针
+
+        public int GetLength => this.length;
+
+        public bool IsEmpty => this.head.NextNode == this.tail;
+
+        public T Current => current.Data;
+
+
+        object IEnumerator.Current => throw new NotImplementedException();
+
+        public SingleLinkList()
+        {
+            this.head = new Node();
+            this.tail = new Node();
+            this.head.NextNode = this.tail;
+            this.length = 0;
+        }
+
+
+
+
+        //*********线性表接口实现
+
+
+        public void Append(T item)
+        {
+            //注意这里实际是值复制，因此需要重置尾节点。
+            NodeBeforeInsert(this.tail, item);
+            this.tail = tail.NextNode;
+        }
+
+        public void Clear()
+        {
+            this.head.NextNode = this.tail;
+        }
+
+        public T Delete(int i)
+        {
+            Node p = GetNode(i);
+            T value = p.Data;
+
+            NodeDelete(p);
+            return value;
+        }
+
+        public T GetElem(int i)
+        {
+            return GetNode(i).Data;
+        }
+
+        public void Insert(T item, int i)
+        {
+            NodeBeforeInsert(GetNode(i), item);
+        }
+
+        public int Locate(T value)
+        {
+            Node p;
+            return GetIndexAndNode(value, out p);
+        }
+
+        public void SetElem(T value, int i)
+        {
+            GetNode(i).Data = value;
+        }
+
+
+        //**********单链表扩展
+
+        /// <summary>
+        /// 按值查找并重设值
+        /// </summary>
+        /// <param name="value">查找值</param>
+        /// <param name="item">重设值</param>
+        /// <returns></returns>
+        public bool SetElem(T value, T item)
+        {
+            return GetElemOperate(value, item, (n, t) => n.Data = item);
+
+
+        }
+
+        /// <summary>
+        /// 按值查找并前插
+        /// </summary>
+        /// <param name="value">查找值</param>
+        /// <param name="item">插入值</param>
+        /// <returns></returns>
+        public bool ElemAfterInsert(T value, T item)
+        {
+            return GetElemOperate(value, item, NodeAfterInsert);
+        }
+        /// <summary>
+        /// 按值查找并后插
+        /// </summary>
+        /// <param name="value">查找值</param>
+        /// <param name="item">插入值</param>
+        /// <returns></returns>
+        public bool ElemBeforeInsert(T value, T item)
+        {
+            return GetElemOperate(value, item, NodeBeforeInsert);
+        }
+
+        public bool Delete(T value)
+        {
+            Node p;
+            if (GetIndexAndNode(value, out p) == -1)
+                return false;
+            NodeDelete(p);
+
+            return true;
+        }
+
+
+        //**********节点封装方法，不公开原因，避免用户违规操作，删除首尾节点，或在首节点前插入值、尾节点后插入值。
+
+        /// <summary>
+        /// 按位查找节点
+        /// </summary>
+        /// <param name="i">索引</param>
+        /// <returns></returns>
+        private Node GetNode(int i)
+        {
+            if (i >= this.length)
+                throw new Exception("索引超出链表范围");
+            Node p = this.head;
+
+            for (int j = 0; j <= i; j++)
+            {
+                p = p.NextNode;
+            }
+
+            return p;
+        }
+
+        /// <summary>
+        /// 按值查找节点，没找到则返回-1，out null
+        /// </summary>
+        /// <param name="v">值</param>
+        /// <param name="node">值的节点</param>
+        /// <returns>索引</returns>
+        private int GetIndexAndNode(T v, out Node node)
+        {
+            int value = -1;
+            node = null;
+            Node p = this.head;
+            while (p.NextNode != this.tail)
+            {
+                p = p.NextNode;
+                value++;
+                if (p.Data.Equals(v))
+                {
+                    node = p;
+                    return value;
+                }
+            }
+
+            return -1;
+        }
+
+        /// <summary>
+        /// 在节点之后插入值
+        /// </summary>
+        /// <param name="node"></param>
+        /// <param name="value"></param>
+        private void NodeAfterInsert(Node node, T value)
+        {
+            if (node == null)
+                return;
+            Node p = new Node(value, node.NextNode);
+            node.NextNode = p;
+            this.length++;
+        }
+
+        /// <summary>
+        /// 在节点之前插入值
+        /// </summary>
+        /// <param name="node"></param>
+        /// <param name="value"></param>
+        private void NodeBeforeInsert(Node node, T value)
+        {
+            if (node == null)
+                return;
+            T t = node.Data;
+            node.Data = value;
+            NodeAfterInsert(node, t);
+        }
+
+        /// <summary>
+        /// 节点删除，如果删除到了尾节点自动重置尾节点
+        /// </summary>
+        /// <param name="node"></param>
+        private void NodeDelete(Node node)
+        {
+            if (node == null)
+                return;
+
+            if (node.NextNode == this.tail)
+                this.tail = node;
+            node.Data = node.NextNode.Data;
+            node.NextNode = node.NextNode.NextNode;
+            this.length--;
+            //如果删除节点为尾节点，需要重置尾节点标识
+
+
+        }
+
+        //**********辅助方法
+
+        /// <summary>
+        /// 按值查找并操作
+        /// </summary>
+        /// <param name="value">查找的值</param>
+        /// <param name="item">操作需要的参数</param>
+        /// <param name="op">操作</param>
+        /// <returns></returns>
+        private bool GetElemOperate(T value, T item, Action<Node, T> op)
+        {
+            Node p;
+            if (GetIndexAndNode(value, out p) == -1)
+                return false;
+            op(p, item);
+            return true;
+        }
+
+
+        //*******枚举器接口实现
+        public IEnumerator<T> GetEnumerator()
+        {
+            Reset();
+            return this;
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool MoveNext()
+        {
+            if (this.current.NextNode != this.tail)
+            {
+                this.current = this.current.NextNode;
+                return true;
+            }
+            return false;
+        }
+
+        public void Reset()
+        {
+            this.current = this.head;
+        }
+
+        public void Dispose()
+        {
+
+        }
+    }
+
+    #endregion
+
+
+    #region 双链表(已经测试）
+
+    /// <summary>
+    /// 只带头节点双链表，操作没有单链表多，因为相比之下，单链表更好
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+
+    public class DoubleLinkList<T> : IlinearList<T>,IEnumerable<T>,IEnumerator<T>
+    {
+
+        /// <summary>
+        /// 双链表节点
+        /// </summary>
+        class DNode
+        {
+            public T Data { get; set; }
+            public DNode NextNode { get; set; }
+            public DNode PriorNode { get; set; }
+
+            public DNode(T item) => this.Data = item;
+            public DNode() => this.Data = default;
+
+        }
+
+        private DNode head;
+        private DNode tail;
+        private int length;
+
+        private DNode current;
+
+        public int GetLength => this.length;
+
+        public bool IsEmpty => this.head == this.tail;
+
+        public T Current => current.Data;
+
+        object IEnumerator.Current => throw new NotImplementedException();
+
+        public DoubleLinkList()
+        {
+            this.head = new DNode();
+            this.tail = this.head;
+            this.length = 0;
+        }
+
+        //***********线性表接口实现
+
+        public void Append(T item)
+        {
+            NodeAfterInsert(item,this.tail);
+        }
+
+        public void Clear()
+        {
+            DNode p = this.head;
+            while (p != null)
+            {
+                //将所有节点的前驱置空
+                p.PriorNode = null;
+                p = p.NextNode;
+            }
+            this.head.NextNode = null;
+            this.tail = this.head;
+
+        }
+
+        public T Delete(int i)
+        {
+            
+            return NodeDelete(GetNode(i));
+        }
+
+        public T GetElem(int i)
+        {
+            DNode p = GetNode(i);
+            return p.Data;
+        }
+
+        public void Insert(T item, int i)
+        {
+           
+            NodeBeforeInsert(item, GetNode(i));
+        }
+
+        public int Locate(T value)
+        {
+            DNode p;
+            return GetIndexAndNode(value,out p);
+        }
+
+        public void SetElem(T value, int i)
+        {
+            GetNode(i).Data = value;
+        }
+
+
+        //*********双链表封装方法
+
+        /// <summary>
+        /// 按位查找，因为是双链表，因此允许从后往前找。这点，比单链表快
+        /// </summary>
+        /// <param name="i"></param>
+        /// <returns></returns>
+        private DNode GetNode(int i)
+        {
+            if (i >= this.length)
+                //排除了空表的情况
+                throw new Exception("索引超出链表范围");
+            DNode p;
+            
+            if (i > length / 2)
+            {
+                p = this.tail;
+               
+                for (int j = this.length - 1; j > i; j--)
+                {
+                    p = p.PriorNode;
+                }
+
+            }
+            else
+            {
+                p = this.head;
+                
+                for (int j=0; j <= i; j++)
+                {
+                    p = p.NextNode;
+                }
+            }
+
+            return p;
+        }
+
+
+        /// <summary>
+        /// 按值查找，找不到返回 -1 ，out null
+        /// </summary>
+        /// <param name="value">查找值</param>
+        /// <param name="node"></param>
+        /// <returns></returns>
+        private int GetIndexAndNode(T value, out DNode node)
+        {
+            int i = -1;
+            node = null;
+            DNode p = this.head;
+            while (p.NextNode != null)
+            {
+                i++;
+                p = p.NextNode;
+                if (p.Data.Equals(value))
+                {
+                    node = p;
+                    return i;
+                }
+            }
+
+            return -1;
+
+        }
+
+        /// <summary>
+        /// 节点前插
+        /// </summary>
+        /// <param name="item"></param>
+        /// <param name="node"></param>
+        private void NodeBeforeInsert(T item, DNode node)
+        {
+            if (node == null)
+                return;
+            DNode t = new DNode(item);
+            DNode q = node.PriorNode;
+            t.NextNode = node;
+            node.PriorNode = t;
+            q.NextNode = t;
+            t.PriorNode = q;
+            this.length++;
+        }
+
+        /// <summary>
+        /// 节点后插
+        /// </summary>
+        /// <param name="item">插入的元素</param>
+        /// <param name="node"></param>
+        private void NodeAfterInsert(T item, DNode node)
+        {
+            if (node == null)
+                return;
+            DNode p = node.NextNode;
+            DNode t = new DNode(item);
+            if (p == null)
+            {
+                //后驱节点为null，表示当前为尾节点
+                this.length++;
+                node.NextNode = t;
+                t.PriorNode = node;
+                this.tail = t;
+                return;
+            }
+
+            NodeBeforeInsert(item, p);
+        }
+
+        /// <summary>
+        /// 节点删除，如果失败，返回Default值
+        /// </summary>
+        /// <param name="node"></param>
+        /// <returns></returns>
+        private T NodeDelete(DNode node)
+        {
+            if (node == null)
+                return default;
+            this.length--;
+            DNode q = node.PriorNode;
+            DNode p = node.NextNode;
+
+            q.NextNode = p;
+
+            if (p == null)
+            {
+                //当前节点为尾节点，在删除节点前重置尾节点
+                this.tail = q;
+            }
+            else
+            {
+                p.PriorNode = q;
+            }
+            return node.Data;
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            Reset();
+            return this;
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool MoveNext()
+        {
+
+            if (this.current.NextNode == null)
+            {
+                return false;
+            }else
+            {
+                this.current = this.current.NextNode;
+                return true;
+            }
+        }
+
+        public void Reset()
+        {
+            this.current = this.head;
+        }
+
+        public void Dispose()
+        {
+            
+        }
+    }
+
+    #endregion
+
+
 
 }
