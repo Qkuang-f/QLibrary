@@ -19,7 +19,7 @@ namespace TestLibray
     class Program
     {
 
-        public static void ListPrint(DoubleLinkList<string> lis)
+        public static void ListPrint(SingleLinkList<string> lis)
         {
             foreach (var item in lis)
             {
@@ -31,7 +31,7 @@ namespace TestLibray
         static void Main(string[] args)
         {
             //A<string> a = new A<string>();
-            DoubleLinkList<string> list1 = new DoubleLinkList<string>();
+            SingleLinkList<string> list1 = new SingleLinkList<string>();
             Console.WriteLine("是否是空表：{0}", list1.IsEmpty);
             list1.Append("早上");
             ListPrint(list1);
@@ -52,6 +52,9 @@ namespace TestLibray
             ListPrint(list1);
 
 
+            Console.WriteLine("倒置表：" + list1.ReverseList());
+            ListPrint(list1);
+
 
             Console.WriteLine("表长：{0}", list1.GetLength);
             Console.WriteLine("是否是空表：{0}", list1.IsEmpty);
@@ -68,14 +71,22 @@ namespace TestLibray
             list1.Delete(list1.GetLength - 2);
 
             list1.SetElem("睡觉了", 0);
+
             ListPrint(list1);
 
+            Console.WriteLine("倒置表：" + list1.ReverseList());
+            ListPrint(list1);
 
             Console.WriteLine("清空");
             list1.Clear();
+
+            Console.WriteLine("倒置表：" + list1.ReverseList());
+            ListPrint(list1);
+
             list1.Append("中上");
 
-
+            Console.WriteLine("倒置表：" + list1.ReverseList());
+            ListPrint(list1);
             ListPrint(list1);
 
             Console.ReadKey();

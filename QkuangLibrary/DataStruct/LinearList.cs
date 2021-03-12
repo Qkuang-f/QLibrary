@@ -714,6 +714,32 @@ namespace QkuangLibrary.DataStruct
             return true;
         }
 
+        /// <summary>
+        /// 倒置链表
+        /// </summary>
+        /// <returns></returns>
+        public bool ReverseList()
+        {
+            
+            if (this.IsEmpty)
+                
+                return false;
+            Node p = this.head.NextNode;
+            Node t,q = this.tail;       //这里原本应该是null，但因为我的单链表是带头尾节点，因此有些改动
+            this.head.NextNode = null ;
+            
+            while (p != this.tail)          //这里原本应该是null，但因为我的单链表是带头尾节点，因此有些改动
+            {
+                t = p;
+                p = p.NextNode;
+                t.NextNode = q;
+                q = t;
+                
+            }
+            this.head.NextNode = q;
+            return true;
+        }
+
 
         //**********节点封装方法，不公开原因，避免用户违规操作，删除首尾节点，或在首节点前插入值、尾节点后插入值。
 
@@ -1089,8 +1115,13 @@ namespace QkuangLibrary.DataStruct
             {
                 p.PriorNode = q;
             }
+            node.PriorNode = null;
+            node.NextNode = null;
             return node.Data;
         }
+
+        //*********枚举器接口实现
+
 
         public IEnumerator<T> GetEnumerator()
         {
